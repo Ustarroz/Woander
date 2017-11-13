@@ -103,8 +103,12 @@
 		C4A3E6971FB9BF2500567836 /* Woander */ = {
 			isa = PBXGroup;
 			children = (
+				C4A3E6BF1FB9CDEF00567836 /* Controller */,
+				C4A3E6BE1FB9CDE600567836 /* View */,
+				C4A3E6BD1FB9CDDF00567836 /* Model */,
+				C4A3E6BC1FB9CDD700567836 /* Extensions */,
+				C4A3E6BB1FB9CDCC00567836 /* Services */,
 				C4A3E6981FB9BF2500567836 /* AppDelegate.swift */,
-				C4A3E69A1FB9BF2500567836 /* ViewController.swift */,
 				C4A3E69C1FB9BF2500567836 /* Main.storyboard */,
 				C4A3E69F1FB9BF2500567836 /* Assets.xcassets */,
 				C4A3E6A11FB9BF2500567836 /* LaunchScreen.storyboard */,
@@ -121,6 +125,42 @@
 				C4A3E6B81FB9C07200567836 /* GoogleService-Info.plist */,
 			);
 			path = WoanderTests;
+			sourceTree = "<group>";
+		};
+		C4A3E6BB1FB9CDCC00567836 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C4A3E6BC1FB9CDD700567836 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C4A3E6BD1FB9CDDF00567836 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C4A3E6BE1FB9CDE600567836 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C4A3E6BF1FB9CDEF00567836 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C4A3E69A1FB9BF2500567836 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		E6211B91C3BA670821120FF0 /* Frameworks */ = {
