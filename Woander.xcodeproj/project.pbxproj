@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FB5786F444D56A68F911604 /* Pods_WoanderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE0CED02550B42C9433F15AA /* Pods_WoanderTests.framework */; };
+		B64576F28D38C8C3848DA5AD /* Pods_Woander.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5667AD09ABEB56280A6C117 /* Pods_Woander.framework */; };
 		C4A3E6991FB9BF2500567836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3E6981FB9BF2500567836 /* AppDelegate.swift */; };
 		C4A3E69B1FB9BF2500567836 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3E69A1FB9BF2500567836 /* ViewController.swift */; };
 		C4A3E69E1FB9BF2500567836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A3E69C1FB9BF2500567836 /* Main.storyboard */; };
 		C4A3E6A01FB9BF2500567836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4A3E69F1FB9BF2500567836 /* Assets.xcassets */; };
 		C4A3E6A31FB9BF2500567836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A3E6A11FB9BF2500567836 /* LaunchScreen.storyboard */; };
 		C4A3E6AE1FB9BF2600567836 /* WoanderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3E6AD1FB9BF2600567836 /* WoanderTests.swift */; };
+		C4A3E6B91FB9C07200567836 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4A3E6B81FB9C07200567836 /* GoogleService-Info.plist */; };
+		C4A3E6BA1FB9C07200567836 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4A3E6B81FB9C07200567836 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20D6234039C0F85BE7DD5A6A /* Pods-Woander.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Woander.release.xcconfig"; path = "Pods/Target Support Files/Pods-Woander/Pods-Woander.release.xcconfig"; sourceTree = "<group>"; };
+		AB9A80E95FFEAEF5715070F4 /* Pods-WoanderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoanderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WoanderTests/Pods-WoanderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B21495CC794EB17AE9FA38A7 /* Pods-WoanderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoanderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WoanderTests/Pods-WoanderTests.release.xcconfig"; sourceTree = "<group>"; };
+		B5667AD09ABEB56280A6C117 /* Pods_Woander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Woander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A3E6951FB9BF2500567836 /* Woander.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Woander.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A3E6981FB9BF2500567836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4A3E69A1FB9BF2500567836 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +44,9 @@
 		C4A3E6A91FB9BF2500567836 /* WoanderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WoanderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A3E6AD1FB9BF2600567836 /* WoanderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoanderTests.swift; sourceTree = "<group>"; };
 		C4A3E6AF1FB9BF2600567836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4A3E6B81FB9C07200567836 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D4C7A84057B2EAB9F376A206 /* Pods-Woander.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Woander.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Woander/Pods-Woander.debug.xcconfig"; sourceTree = "<group>"; };
+		DE0CED02550B42C9433F15AA /* Pods_WoanderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoanderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B64576F28D38C8C3848DA5AD /* Pods_Woander.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +62,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FB5786F444D56A68F911604 /* Pods_WoanderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D7D6F988EFC7F2495CF9F76 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4C7A84057B2EAB9F376A206 /* Pods-Woander.debug.xcconfig */,
+				20D6234039C0F85BE7DD5A6A /* Pods-Woander.release.xcconfig */,
+				AB9A80E95FFEAEF5715070F4 /* Pods-WoanderTests.debug.xcconfig */,
+				B21495CC794EB17AE9FA38A7 /* Pods-WoanderTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C4A3E68C1FB9BF2500567836 = {
 			isa = PBXGroup;
 			children = (
 				C4A3E6971FB9BF2500567836 /* Woander */,
 				C4A3E6AC1FB9BF2500567836 /* WoanderTests */,
 				C4A3E6961FB9BF2500567836 /* Products */,
+				6D7D6F988EFC7F2495CF9F76 /* Pods */,
+				E6211B91C3BA670821120FF0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,8 +118,18 @@
 			children = (
 				C4A3E6AD1FB9BF2600567836 /* WoanderTests.swift */,
 				C4A3E6AF1FB9BF2600567836 /* Info.plist */,
+				C4A3E6B81FB9C07200567836 /* GoogleService-Info.plist */,
 			);
 			path = WoanderTests;
+			sourceTree = "<group>";
+		};
+		E6211B91C3BA670821120FF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5667AD09ABEB56280A6C117 /* Pods_Woander.framework */,
+				DE0CED02550B42C9433F15AA /* Pods_WoanderTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,9 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4A3E6B21FB9BF2600567836 /* Build configuration list for PBXNativeTarget "Woander" */;
 			buildPhases = (
+				C5505DB0E45DEFA302CB2896 /* [CP] Check Pods Manifest.lock */,
 				C4A3E6911FB9BF2500567836 /* Sources */,
 				C4A3E6921FB9BF2500567836 /* Frameworks */,
 				C4A3E6931FB9BF2500567836 /* Resources */,
+				D336B5486CEAB2643E353AD4 /* [CP] Embed Pods Frameworks */,
+				9852DFCD747F4E26B1950D1D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4A3E6B51FB9BF2600567836 /* Build configuration list for PBXNativeTarget "WoanderTests" */;
 			buildPhases = (
+				CE1B42A95116DC0D57929BE6 /* [CP] Check Pods Manifest.lock */,
 				C4A3E6A51FB9BF2500567836 /* Sources */,
 				C4A3E6A61FB9BF2500567836 /* Frameworks */,
 				C4A3E6A71FB9BF2500567836 /* Resources */,
+				4EF4553E7FF07A8DCD765CDA /* [CP] Embed Pods Frameworks */,
+				7DF3D0403DDF5A6AD4328D7D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,6 +223,7 @@
 			files = (
 				C4A3E6A31FB9BF2500567836 /* LaunchScreen.storyboard in Resources */,
 				C4A3E6A01FB9BF2500567836 /* Assets.xcassets in Resources */,
+				C4A3E6B91FB9C07200567836 /* GoogleService-Info.plist in Resources */,
 				C4A3E69E1FB9BF2500567836 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,10 +232,125 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4A3E6BA1FB9C07200567836 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4EF4553E7FF07A8DCD765CDA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WoanderTests/Pods-WoanderTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DF3D0403DDF5A6AD4328D7D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WoanderTests/Pods-WoanderTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9852DFCD747F4E26B1950D1D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Woander/Pods-Woander-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Woander/Pods-Woander-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5505DB0E45DEFA302CB2896 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Woander-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE1B42A95116DC0D57929BE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WoanderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D336B5486CEAB2643E353AD4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Woander/Pods-Woander-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Woander/Pods-Woander-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C4A3E6911FB9BF2500567836 /* Sources */ = {
@@ -351,6 +509,7 @@
 		};
 		C4A3E6B31FB9BF2600567836 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4C7A84057B2EAB9F376A206 /* Pods-Woander.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -366,6 +525,7 @@
 		};
 		C4A3E6B41FB9BF2600567836 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20D6234039C0F85BE7DD5A6A /* Pods-Woander.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -381,6 +541,7 @@
 		};
 		C4A3E6B61FB9BF2600567836 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB9A80E95FFEAEF5715070F4 /* Pods-WoanderTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -398,6 +559,7 @@
 		};
 		C4A3E6B71FB9BF2600567836 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B21495CC794EB17AE9FA38A7 /* Pods-WoanderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
