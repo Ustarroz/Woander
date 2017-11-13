@@ -12,13 +12,8 @@
     },
     {
       "idiom" : "universal",
-      "scale" : "3x"
-    },
-    {
-      "idiom" : "universal",
       "filename" : "Rectangle 10@1x.png",
-      "unassigned" : true,
-      "scale" : "1x"
+      "scale" : "3x"
     }
   ],
   "info" : {

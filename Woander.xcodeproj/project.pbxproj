@@ -11,13 +11,16 @@
 		B64576F28D38C8C3848DA5AD /* Pods_Woander.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5667AD09ABEB56280A6C117 /* Pods_Woander.framework */; };
 		C4A3E6991FB9BF2500567836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3E6981FB9BF2500567836 /* AppDelegate.swift */; };
 		C4A3E69B1FB9BF2500567836 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3E69A1FB9BF2500567836 /* MapVC.swift */; };
-		C4A3E69E1FB9BF2500567836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A3E69C1FB9BF2500567836 /* Main.storyboard */; };
 		C4A3E6A01FB9BF2500567836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4A3E69F1FB9BF2500567836 /* Assets.xcassets */; };
 		C4A3E6A31FB9BF2500567836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A3E6A11FB9BF2500567836 /* LaunchScreen.storyboard */; };
 		C4A3E6AE1FB9BF2600567836 /* WoanderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3E6AD1FB9BF2600567836 /* WoanderTests.swift */; };
 		C4A3E6B91FB9C07200567836 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4A3E6B81FB9C07200567836 /* GoogleService-Info.plist */; };
 		C4A3E6BA1FB9C07200567836 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4A3E6B81FB9C07200567836 /* GoogleService-Info.plist */; };
 		C4A3E6C11FB9E52100567836 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3E6C01FB9E52100567836 /* AuthVC.swift */; };
+		C4A3E6C31FB9EBAB00567836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A3E6C21FB9EBAB00567836 /* Main.storyboard */; };
+		C4A3E6C51FB9F1A400567836 /* UItextefieldExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3E6C41FB9F1A400567836 /* UItextefieldExt.swift */; };
+		C4A3E6C71FB9F3D300567836 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3E6C61FB9F3D300567836 /* AuthService.swift */; };
+		C4A3E6C91FB9F68800567836 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3E6C81FB9F68800567836 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 		C4A3E6951FB9BF2500567836 /* Woander.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Woander.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A3E6981FB9BF2500567836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4A3E69A1FB9BF2500567836 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
-		C4A3E69D1FB9BF2500567836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4A3E69F1FB9BF2500567836 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4A3E6A21FB9BF2500567836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4A3E6A41FB9BF2500567836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		C4A3E6AF1FB9BF2600567836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4A3E6B81FB9C07200567836 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C4A3E6C01FB9E52100567836 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		C4A3E6C21FB9EBAB00567836 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C4A3E6C41FB9F1A400567836 /* UItextefieldExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UItextefieldExt.swift; sourceTree = "<group>"; };
+		C4A3E6C61FB9F3D300567836 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		C4A3E6C81FB9F68800567836 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		D4C7A84057B2EAB9F376A206 /* Pods-Woander.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Woander.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Woander/Pods-Woander.debug.xcconfig"; sourceTree = "<group>"; };
 		DE0CED02550B42C9433F15AA /* Pods_WoanderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoanderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -111,7 +117,7 @@
 				C4A3E6BD1FB9CDDF00567836 /* Model */,
 				C4A3E6BC1FB9CDD700567836 /* Extensions */,
 				C4A3E6981FB9BF2500567836 /* AppDelegate.swift */,
-				C4A3E69C1FB9BF2500567836 /* Main.storyboard */,
+				C4A3E6C21FB9EBAB00567836 /* Main.storyboard */,
 				C4A3E69F1FB9BF2500567836 /* Assets.xcassets */,
 				C4A3E6A11FB9BF2500567836 /* LaunchScreen.storyboard */,
 				C4A3E6A41FB9BF2500567836 /* Info.plist */,
@@ -132,6 +138,8 @@
 		C4A3E6BB1FB9CDCC00567836 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C4A3E6C61FB9F3D300567836 /* AuthService.swift */,
+				C4A3E6C81FB9F68800567836 /* DataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -139,6 +147,7 @@
 		C4A3E6BC1FB9CDD700567836 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C4A3E6C41FB9F1A400567836 /* UItextefieldExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -267,7 +276,7 @@
 				C4A3E6A31FB9BF2500567836 /* LaunchScreen.storyboard in Resources */,
 				C4A3E6A01FB9BF2500567836 /* Assets.xcassets in Resources */,
 				C4A3E6B91FB9C07200567836 /* GoogleService-Info.plist in Resources */,
-				C4A3E69E1FB9BF2500567836 /* Main.storyboard in Resources */,
+				C4A3E6C31FB9EBAB00567836 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +409,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4A3E6C51FB9F1A400567836 /* UItextefieldExt.swift in Sources */,
 				C4A3E6C11FB9E52100567836 /* AuthVC.swift in Sources */,
+				C4A3E6C71FB9F3D300567836 /* AuthService.swift in Sources */,
+				C4A3E6C91FB9F68800567836 /* DataService.swift in Sources */,
 				C4A3E69B1FB9BF2500567836 /* MapVC.swift in Sources */,
 				C4A3E6991FB9BF2500567836 /* AppDelegate.swift in Sources */,
 			);
@@ -425,14 +437,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C4A3E69C1FB9BF2500567836 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C4A3E69D1FB9BF2500567836 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C4A3E6A11FB9BF2500567836 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
