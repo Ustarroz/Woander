@@ -21,6 +21,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         GMSServices.provideAPIKey("AIzaSyCe7rcMib5TmtnAMQDQKqjokWTB3TsGoFM")
         GMSPlacesClient.provideAPIKey("AIzaSyCe7rcMib5TmtnAMQDQKqjokWTB3TsGoFM")
+        if Auth.auth().currentUser == nil {
+            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+            let authVC = storyboard.instantiateViewController(withIdentifier: "AuthVC")
+            window?.makeKeyAndVisible()
+            window?.rootViewController?.present(authVC, animated: true, completion: nil)
+        }
         // Override point for customization after application launch.
         return true
     }

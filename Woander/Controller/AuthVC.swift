@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class AuthVC: UIViewController {
 
@@ -16,7 +17,9 @@ class AuthVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if Auth.auth().currentUser != nil {
+            dismiss(animated: true, completion: nil)
+        }
         // Do any additional setup after loading the view.
     }
 
@@ -27,11 +30,26 @@ class AuthVC: UIViewController {
     
 
     
-
     @IBAction func signUpBtnWasPressed(_ sender: Any) {
         if emailTextField.text != nil && paswordTextField.text != nil {
+            AuthService.instance.loginUser(email: emailTextField.text!, password: paswordTextField.text!, loginCreationComplete: { (success, loginError) in
+                    if success {
+                        self.dismiss(animated: true, completion: nil)
+                    }
+                    else {
+                        print(String(describing: loginError?.localizedDescription))
+                    }
+                AuthService.instance.registerUser(email: self.emailTextField.text!, password: self.paswordTextField.text!, userCreationComplete: { (success, registrationError) in
+                        if success {
+                            AuthService.instance.loginUser(email: self.emailTextField.text!, password: self.paswordTextField.text!, loginCreationComplete: { (success, nil) in
+                                self.dismiss(animated: true, completion: nil)
+                            })
+                        } else {
+                            print(String(describing: registrationError?.localizedDescription))
+                        }
+                    })
+                })
+            }
             
         }
-    }
-    
 }

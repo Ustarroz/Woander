@@ -22,7 +22,7 @@
         <!--AuthVC-->
         <scene sceneID="Y2C-lS-HtP">
             <objects>
-                <viewController id="2T4-50-udh" customClass="AuthVC" customModule="Woander" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AuthVC" id="2T4-50-udh" customClass="AuthVC" customModule="Woander" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zQB-IH-V2H">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
