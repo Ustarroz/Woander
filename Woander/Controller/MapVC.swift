@@ -25,6 +25,7 @@ class MapVC: UIViewController {
         marker.title = "Coucou Maman!"
         marker.snippet = "On est la"
         marker.map = mapView
+        
     }
     
     override func viewDidLoad() {

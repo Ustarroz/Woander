@@ -17,6 +17,7 @@
 		C4A3E6AE1FB9BF2600567836 /* WoanderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3E6AD1FB9BF2600567836 /* WoanderTests.swift */; };
 		C4A3E6B91FB9C07200567836 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4A3E6B81FB9C07200567836 /* GoogleService-Info.plist */; };
 		C4A3E6BA1FB9C07200567836 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4A3E6B81FB9C07200567836 /* GoogleService-Info.plist */; };
+		C4A3E6C11FB9E52100567836 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3E6C01FB9E52100567836 /* AuthVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		C4A3E6AD1FB9BF2600567836 /* WoanderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoanderTests.swift; sourceTree = "<group>"; };
 		C4A3E6AF1FB9BF2600567836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4A3E6B81FB9C07200567836 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C4A3E6C01FB9E52100567836 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		D4C7A84057B2EAB9F376A206 /* Pods-Woander.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Woander.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Woander/Pods-Woander.debug.xcconfig"; sourceTree = "<group>"; };
 		DE0CED02550B42C9433F15AA /* Pods_WoanderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoanderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -103,11 +105,11 @@
 		C4A3E6971FB9BF2500567836 /* Woander */ = {
 			isa = PBXGroup;
 			children = (
+				C4A3E6BB1FB9CDCC00567836 /* Services */,
 				C4A3E6BF1FB9CDEF00567836 /* Controller */,
 				C4A3E6BE1FB9CDE600567836 /* View */,
 				C4A3E6BD1FB9CDDF00567836 /* Model */,
 				C4A3E6BC1FB9CDD700567836 /* Extensions */,
-				C4A3E6BB1FB9CDCC00567836 /* Services */,
 				C4A3E6981FB9BF2500567836 /* AppDelegate.swift */,
 				C4A3E69C1FB9BF2500567836 /* Main.storyboard */,
 				C4A3E69F1FB9BF2500567836 /* Assets.xcassets */,
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				C4A3E69A1FB9BF2500567836 /* MapVC.swift */,
+				C4A3E6C01FB9E52100567836 /* AuthVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4A3E6C11FB9E52100567836 /* AuthVC.swift in Sources */,
 				C4A3E69B1FB9BF2500567836 /* MapVC.swift in Sources */,
 				C4A3E6991FB9BF2500567836 /* AppDelegate.swift in Sources */,
 			);
