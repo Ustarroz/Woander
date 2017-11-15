@@ -10,7 +10,7 @@ import UIKit
 import GoogleMaps
 import Firebase
 
-class MapVC: UIViewController {
+class MapVC: UIViewController{
 
     override func loadView() {
         // Create a GMSCameraPosition that tells the map to display the
@@ -31,6 +31,7 @@ class MapVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addMyBtn()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

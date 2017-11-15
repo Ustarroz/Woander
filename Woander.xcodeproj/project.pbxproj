@@ -21,6 +21,7 @@
 		C4A3E6C51FB9F1A400567836 /* UItextefieldExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3E6C41FB9F1A400567836 /* UItextefieldExt.swift */; };
 		C4A3E6C71FB9F3D300567836 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3E6C61FB9F3D300567836 /* AuthService.swift */; };
 		C4A3E6C91FB9F68800567836 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3E6C81FB9F68800567836 /* DataService.swift */; };
+		C4D9A69A1FBC51AD00557629 /* NewMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D9A6991FBC51AD00557629 /* NewMapVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		C4A3E6C41FB9F1A400567836 /* UItextefieldExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UItextefieldExt.swift; sourceTree = "<group>"; };
 		C4A3E6C61FB9F3D300567836 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		C4A3E6C81FB9F68800567836 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		C4D9A6991FBC51AD00557629 /* NewMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMapVC.swift; sourceTree = "<group>"; };
 		D4C7A84057B2EAB9F376A206 /* Pods-Woander.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Woander.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Woander/Pods-Woander.debug.xcconfig"; sourceTree = "<group>"; };
 		DE0CED02550B42C9433F15AA /* Pods_WoanderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoanderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -171,6 +173,7 @@
 			children = (
 				C4A3E69A1FB9BF2500567836 /* MapVC.swift */,
 				C4A3E6C01FB9E52100567836 /* AuthVC.swift */,
+				C4D9A6991FBC51AD00557629 /* NewMapVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4A3E6C51FB9F1A400567836 /* UItextefieldExt.swift in Sources */,
+				C4D9A69A1FBC51AD00557629 /* NewMapVC.swift in Sources */,
 				C4A3E6C11FB9E52100567836 /* AuthVC.swift in Sources */,
 				C4A3E6C71FB9F3D300567836 /* AuthService.swift in Sources */,
 				C4A3E6C91FB9F68800567836 /* DataService.swift in Sources */,

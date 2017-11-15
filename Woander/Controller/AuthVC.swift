@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class AuthVC: UIViewController {
+class AuthVC: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var paswordTextField: UITextField!
@@ -20,6 +20,8 @@ class AuthVC: UIViewController {
         if Auth.auth().currentUser != nil {
             dismiss(animated: true, completion: nil)
         }
+            self.emailTextField.delegate = self
+            self.paswordTextField.delegate = self
         // Do any additional setup after loading the view.
     }
 
@@ -28,7 +30,10 @@ class AuthVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
     
     @IBAction func signUpBtnWasPressed(_ sender: Any) {
         if emailTextField.text != nil && paswordTextField.text != nil {
