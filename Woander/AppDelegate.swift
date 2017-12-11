@@ -18,8 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
-        GMSServices.provideAPIKey("AIzaSyCe7rcMib5TmtnAMQDQKqjokWTB3TsGoFM")
-        GMSPlacesClient.provideAPIKey("AIzaSyCe7rcMib5TmtnAMQDQKqjokWTB3TsGoFM")
+        GMSServices.provideAPIKey("AIzaSyAaJTcWsW5vs1l8FHiUhUc4C0XSQSddbSw")
+        GMSPlacesClient.provideAPIKey("AIzaSyAaJTcWsW5vs1l8FHiUhUc4C0XSQSddbSw")
         if Auth.auth().currentUser == nil {
             let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
             let authVC = storyboard.instantiateViewController(withIdentifier: "AuthVC")

@@ -48,4 +48,13 @@ class Dataservice {
             }
         }
     }
+    
+    func UploadPost(message: String , forUID uid: String, groupKey: String?, sendComplete: @escaping(_ status: Bool) ->()) {
+        if groupKey != nil {
+            
+        } else {
+            REF_FEED.childByAutoId().updateChildValues(["spot": message, "senderId": uid])
+            sendComplete(true)
+        }
+    }
 }
