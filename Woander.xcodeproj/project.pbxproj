@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E95BF2F2052FE7100925D8A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E95BF2E2052FE7100925D8A /* Post.swift */; };
 		4FB5786F444D56A68F911604 /* Pods_WoanderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE0CED02550B42C9433F15AA /* Pods_WoanderTests.framework */; };
 		B64576F28D38C8C3848DA5AD /* Pods_Woander.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5667AD09ABEB56280A6C117 /* Pods_Woander.framework */; };
 		C4A3E6991FB9BF2500567836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3E6981FB9BF2500567836 /* AppDelegate.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		20D6234039C0F85BE7DD5A6A /* Pods-Woander.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Woander.release.xcconfig"; path = "Pods/Target Support Files/Pods-Woander/Pods-Woander.release.xcconfig"; sourceTree = "<group>"; };
+		4E95BF2E2052FE7100925D8A /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		AB9A80E95FFEAEF5715070F4 /* Pods-WoanderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoanderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WoanderTests/Pods-WoanderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B21495CC794EB17AE9FA38A7 /* Pods-WoanderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoanderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WoanderTests/Pods-WoanderTests.release.xcconfig"; sourceTree = "<group>"; };
 		B5667AD09ABEB56280A6C117 /* Pods_Woander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Woander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,6 +163,7 @@
 		C4A3E6BD1FB9CDDF00567836 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4E95BF2E2052FE7100925D8A /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				C4A3E6C71FB9F3D300567836 /* AuthService.swift in Sources */,
 				C4A3E6C91FB9F68800567836 /* DataService.swift in Sources */,
 				C4A3E69B1FB9BF2500567836 /* MapVC.swift in Sources */,
+				4E95BF2F2052FE7100925D8A /* Post.swift in Sources */,
 				C4C35DD11FBDD06000292BBE /* MapMarkerWindow.swift in Sources */,
 				C4A3E6991FB9BF2500567836 /* AppDelegate.swift in Sources */,
 			);
