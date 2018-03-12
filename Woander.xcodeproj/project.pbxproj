@@ -164,6 +164,7 @@
 		C4A3E6BD1FB9CDDF00567836 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4E95BF2E2052FE7100925D8A /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -429,6 +430,7 @@
 				C4A3E6C71FB9F3D300567836 /* AuthService.swift in Sources */,
 				C4A3E6C91FB9F68800567836 /* DataService.swift in Sources */,
 				C4A3E69B1FB9BF2500567836 /* MapVC.swift in Sources */,
+				4E95BF2F2052FE7100925D8A /* Post.swift in Sources */,
 				C4C35DD11FBDD06000292BBE /* MapMarkerWindow.swift in Sources */,
 				C4A3E6991FB9BF2500567836 /* AppDelegate.swift in Sources */,
 			);
