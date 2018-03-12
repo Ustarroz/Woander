@@ -8,6 +8,8 @@
 
 import Foundation
 import Firebase
+import FirebaseStorage
+import UIKit
 
 let DB_BASE = Database.database().reference()
 
@@ -19,6 +21,7 @@ class Dataservice {
     private var _REF_GROUPS = DB_BASE.child("groups")
     private var _REF_FEED = DB_BASE.child("feed")
     private var _REF_POST = DB_BASE.child("posts")
+    private var _REF_STORAGE = Storage.storage()
     
     var REF_BASE: DatabaseReference {
         return _REF_BASE
@@ -37,6 +40,10 @@ class Dataservice {
     
     var REF_POST: DatabaseReference {
         return _REF_POST
+    }
+    
+    var REF_STORAGE: Storage {
+        return _REF_STORAGE
     }
     
     func createDBUser(uid: String, userData: Dictionary<String, Any>) {
@@ -95,6 +102,19 @@ class Dataservice {
             let item : Post = self.snapToPost(snapshot: snapshot) ?? Post()
             handler(item)
         })
+    }
+    
+    func downloadPhoto(post: Post, view: UIImageView) {
+        if (post.postType != Post.TYPE.PHOTO) {
+            return
+        }
+        let storageRef = REF_STORAGE.reference(forURL: post.postContent)
+        storageRef.getData(maxSize: 10*1024*1024) { (data, error) in
+            if (data != nil) {
+
+                view.image = UIImage(data: data!)
+            }
+        }
     }
     
     func UploadPost(message: String , forUID uid: String, groupKey: String?, sendComplete: @escaping(_ status: Bool) ->()) {
