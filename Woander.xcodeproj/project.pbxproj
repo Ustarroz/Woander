@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4B42ACEAF25B26CF599B724C /* Pods_Woander.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14757C6CCF29F5A1E6FFA61A /* Pods_Woander.framework */; };
 		A0F0379B641F77EAD5FDFB9B /* Pods_WoanderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B847137DDBDB954FEE8B43 /* Pods_WoanderTests.framework */; };
+		C45717A82057FAE10066C6BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C45717A72057FAE10066C6BE /* GoogleService-Info.plist */; };
 		C4A3E6991FB9BF2500567836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3E6981FB9BF2500567836 /* AppDelegate.swift */; };
 		C4A3E69B1FB9BF2500567836 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3E69A1FB9BF2500567836 /* MapVC.swift */; };
 		C4A3E6A01FB9BF2500567836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4A3E69F1FB9BF2500567836 /* Assets.xcassets */; };
@@ -19,7 +20,9 @@
 		C4A3E6C51FB9F1A400567836 /* UItextefieldExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3E6C41FB9F1A400567836 /* UItextefieldExt.swift */; };
 		C4A3E6C71FB9F3D300567836 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3E6C61FB9F3D300567836 /* AuthService.swift */; };
 		C4A3E6C91FB9F68800567836 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3E6C81FB9F68800567836 /* DataService.swift */; };
-		C4B4FEC020515CE600BC4B8F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4B4FEBF20515CE600BC4B8F /* GoogleService-Info.plist */; };
+		C4BAEC982056B0D0004D7F7E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BAEC972056B0D0004D7F7E /* Post.swift */; };
+		C4BAEC9A2056B0F8004D7F7E /* FloatingPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BAEC992056B0F8004D7F7E /* FloatingPointExtension.swift */; };
+		C4BAEC9C2056B100004D7F7E /* StringToImagesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BAEC9B2056B100004D7F7E /* StringToImagesExtension.swift */; };
 		C4C35DCF1FBDC44500292BBE /* PostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4C35DCE1FBDC44500292BBE /* PostView.xib */; };
 		C4C35DD11FBDD06000292BBE /* MapMarkerWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C35DD01FBDD06000292BBE /* MapMarkerWindow.swift */; };
 		C4D232D420567883000D5A83 /* ARVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D232D320567883000D5A83 /* ARVC.swift */; };
@@ -40,6 +43,8 @@
 		14757C6CCF29F5A1E6FFA61A /* Pods_Woander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Woander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C7BB5DE7FCD06725F7F9827 /* Pods-Woander.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Woander.release.xcconfig"; path = "Pods/Target Support Files/Pods-Woander/Pods-Woander.release.xcconfig"; sourceTree = "<group>"; };
 		7E4721CD6D1BD779379BD001 /* Pods-Woander.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Woander.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Woander/Pods-Woander.debug.xcconfig"; sourceTree = "<group>"; };
+		C43DB4562057CAAA000912A3 /* Forward.dae */ = {isa = PBXFileReference; lastKnownFileType = text.xml.dae; path = Forward.dae; sourceTree = "<group>"; };
+		C45717A72057FAE10066C6BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C4A3E6951FB9BF2500567836 /* Woander.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Woander.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A3E6981FB9BF2500567836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4A3E69A1FB9BF2500567836 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
@@ -54,8 +59,9 @@
 		C4A3E6C41FB9F1A400567836 /* UItextefieldExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UItextefieldExt.swift; sourceTree = "<group>"; };
 		C4A3E6C61FB9F3D300567836 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		C4A3E6C81FB9F68800567836 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
-		C4B4FEBF20515CE600BC4B8F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		C4B4FEC120515CE900BC4B8F /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C4BAEC972056B0D0004D7F7E /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		C4BAEC992056B0F8004D7F7E /* FloatingPointExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FloatingPointExtension.swift; path = ../../../Here/Here/Extensions/FloatingPointExtension.swift; sourceTree = "<group>"; };
+		C4BAEC9B2056B100004D7F7E /* StringToImagesExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringToImagesExtension.swift; path = ../../../Here/Here/Extensions/StringToImagesExtension.swift; sourceTree = "<group>"; };
 		C4C35DCE1FBDC44500292BBE /* PostView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostView.xib; sourceTree = "<group>"; };
 		C4C35DD01FBDD06000292BBE /* MapMarkerWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMarkerWindow.swift; sourceTree = "<group>"; };
 		C4D232D320567883000D5A83 /* ARVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARVC.swift; sourceTree = "<group>"; };
@@ -119,17 +125,18 @@
 		C4A3E6971FB9BF2500567836 /* Woander */ = {
 			isa = PBXGroup;
 			children = (
+				C4BAEC9D2056E84E004D7F7E /* ARobject */,
 				C4A3E6BB1FB9CDCC00567836 /* Services */,
 				C4A3E6BF1FB9CDEF00567836 /* Controller */,
 				C4A3E6BE1FB9CDE600567836 /* View */,
 				C4A3E6BD1FB9CDDF00567836 /* Model */,
 				C4A3E6BC1FB9CDD700567836 /* Extensions */,
 				C4A3E6981FB9BF2500567836 /* AppDelegate.swift */,
+				C45717A72057FAE10066C6BE /* GoogleService-Info.plist */,
 				C4A3E6C21FB9EBAB00567836 /* Main.storyboard */,
 				C4A3E69F1FB9BF2500567836 /* Assets.xcassets */,
 				C4A3E6A11FB9BF2500567836 /* LaunchScreen.storyboard */,
 				C4A3E6A41FB9BF2500567836 /* Info.plist */,
-				C4B4FEC120515CE900BC4B8F /* GoogleService-Info.plist */,
 			);
 			path = Woander;
 			sourceTree = "<group>";
@@ -139,7 +146,6 @@
 			children = (
 				C4A3E6AD1FB9BF2600567836 /* WoanderTests.swift */,
 				C4A3E6AF1FB9BF2600567836 /* Info.plist */,
-				C4B4FEBF20515CE600BC4B8F /* GoogleService-Info.plist */,
 			);
 			path = WoanderTests;
 			sourceTree = "<group>";
@@ -156,6 +162,8 @@
 		C4A3E6BC1FB9CDD700567836 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C4BAEC9B2056B100004D7F7E /* StringToImagesExtension.swift */,
+				C4BAEC992056B0F8004D7F7E /* FloatingPointExtension.swift */,
 				C4A3E6C41FB9F1A400567836 /* UItextefieldExt.swift */,
 			);
 			path = Extensions;
@@ -164,7 +172,7 @@
 		C4A3E6BD1FB9CDDF00567836 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4E95BF2E2052FE7100925D8A /* Post.swift */,
+				C4BAEC972056B0D0004D7F7E /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -187,6 +195,14 @@
 				C4D232D320567883000D5A83 /* ARVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		C4BAEC9D2056E84E004D7F7E /* ARobject */ = {
+			isa = PBXGroup;
+			children = (
+				C43DB4562057CAAA000912A3 /* Forward.dae */,
+			);
+			path = ARobject;
 			sourceTree = "<group>";
 		};
 		D06FA69E397AF73CD0337E46 /* Frameworks */ = {
@@ -290,7 +306,7 @@
 			files = (
 				C4A3E6A31FB9BF2500567836 /* LaunchScreen.storyboard in Resources */,
 				C4A3E6A01FB9BF2500567836 /* Assets.xcassets in Resources */,
-				C4B4FEC020515CE600BC4B8F /* GoogleService-Info.plist in Resources */,
+				C45717A82057FAE10066C6BE /* GoogleService-Info.plist in Resources */,
 				C4C35DCF1FBDC44500292BBE /* PostView.xib in Resources */,
 				C4A3E6C31FB9EBAB00567836 /* Main.storyboard in Resources */,
 			);
@@ -430,9 +446,11 @@
 				C4A3E6C71FB9F3D300567836 /* AuthService.swift in Sources */,
 				C4A3E6C91FB9F68800567836 /* DataService.swift in Sources */,
 				C4A3E69B1FB9BF2500567836 /* MapVC.swift in Sources */,
-				4E95BF2F2052FE7100925D8A /* Post.swift in Sources */,
 				C4C35DD11FBDD06000292BBE /* MapMarkerWindow.swift in Sources */,
+				C4BAEC9A2056B0F8004D7F7E /* FloatingPointExtension.swift in Sources */,
+				C4BAEC9C2056B100004D7F7E /* StringToImagesExtension.swift in Sources */,
 				C4A3E6991FB9BF2500567836 /* AppDelegate.swift in Sources */,
+				C4BAEC982056B0D0004D7F7E /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,7 +603,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = robin.Woander;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Woander/Controller/Woander-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -604,7 +622,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = robin.Woander;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Woander/Controller/Woander-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
