@@ -82,6 +82,20 @@ class Dataservice {
                     idPost: idPost)
     }
     
+    func getAddedPost(handler : @escaping (_ item : Post) -> ()) {
+        REF_POST.observe(DataEventType.childAdded, with: { snapshot in
+            let item : Post = self.snapToPost(snapshot: snapshot) ?? Post()
+            handler(item)
+        })
+    }
+    
+    func getRemovedPost(handler : @escaping (_ item : Post) -> ()) {
+        REF_POST.observe(DataEventType.childRemoved, with: { snapshot in
+            let item : Post = self.snapToPost(snapshot: snapshot) ?? Post()
+            handler(item)
+        })
+    }
+    
     func getAllPosts(handler : @escaping (_ item : [Post]) -> ()) {
         REF_POST.observe(DataEventType.value, with: {snapshotPosts in
             var posts : [Post] = [Post]()

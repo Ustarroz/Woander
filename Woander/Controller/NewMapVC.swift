@@ -16,6 +16,7 @@ class NewMapVC: UIViewController, CLLocationManagerDelegate, UIImagePickerContro
     lazy var mapView = GMSMapView()
     let myPost = GMSMarker()
     lazy var infoWindow = MapMarkerWindow(frame: CGRect(x: 0, y: 0, width: 350 , height: 550))
+    var allPosts : [GMSMarker] = [GMSMarker]()
 
     func mapView(_ mapView: GMSMapView, markerInfoWindow marker: GMSMarker) -> UIView? {
         return UIView()
@@ -45,6 +46,7 @@ class NewMapVC: UIViewController, CLLocationManagerDelegate, UIImagePickerContro
         let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 13.0)
         mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         view = mapView
+        manageMarkersFromDB()
         
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
@@ -71,7 +73,7 @@ class NewMapVC: UIViewController, CLLocationManagerDelegate, UIImagePickerContro
       
         locationManager.stopUpdatingLocation()
         myPost.position = CLLocationCoordinate2D(latitude: userLocation!.coordinate.latitude, longitude: userLocation!.coordinate.longitude)
-       myPost.map = mapView
+        myPost.map = mapView
     }
 
     func addMyBtn() -> UIButton {
@@ -121,34 +123,64 @@ class NewMapVC: UIViewController, CLLocationManagerDelegate, UIImagePickerContro
         
     }
     
-    func loadMarkersFromDB() {
-        let ref = DB_BASE.child("spots")
-        ref.observe(.childAdded, with: { (snapshot) in
-            if snapshot.value as? [String : AnyObject] != nil {
-                self.mapView.clear()
-                guard let spot = snapshot.value as? [String : AnyObject] else {
+    private func placeMarker(spot: Post) {
+        // Get coordinate values from DB
+        if (spot.postType == Post.TYPE.UNKNOWN) {
+            return
+        }
+        let latitude = spot.locLat
+        let longitude = spot.locLon
+        
+        DispatchQueue.main.async(execute: {
+            let marker = GMSMarker()
+            // Assign custom image for each marker
+            var imageString : String
+            switch (spot.postType) {
+                case (Post.TYPE.PHOTO) : imageString = "post_photo"
+                case (Post.TYPE.VIDEO) : imageString = "post_video"
+                default : imageString = "post_ar"
+            }
+            let markerImage = UIImage(named: imageString)
+            let markerView = UIImageView(image: markerImage)
+            marker.iconView = markerView
+            marker.position = CLLocationCoordinate2D(latitude: latitude as! CLLocationDegrees, longitude: longitude as! CLLocationDegrees)
+            marker.map = self.mapView
+            // *IMPORTANT* Assign all the spots data to the marker's userData property
+            marker.userData = spot
+            self.allPosts.append(marker)
+        })
+    }
+    
+    private func placeAllMarkers(posts: [Post]){
+        if (posts.isEmpty) {
+            return
+        }
+        self.mapView.clear()
+        allPosts = [GMSMarker]()
+        for spot in posts {
+            placeMarker(spot: spot)
+        }
+    }
+    
+    func manageMarkersFromDB() {
+        Dataservice.instance.getAllPosts(handler: {(posts) in
+            self.placeAllMarkers(posts: posts)
+        })
+        Dataservice.instance.getAddedPost(handler: {(post) in
+            self.placeMarker(spot: post)
+        })
+        Dataservice.instance.getRemovedPost(handler: {(post) in
+            var index = 0
+            for marker in self.allPosts {
+                let spot = marker.userData as? Post ?? Post()
+                if spot.idPost == post.idPost {
+                    marker.map = nil
+                    self.allPosts.remove(at: index)
                     return
                 }
-                // Get coordinate values from DB
-                let latitude = spot["latitude"]
-                let longitude = spot["longitude"]
-                
-                DispatchQueue.main.async(execute: {
-                    let marker = GMSMarker()
-                    // Assign custom image for each marker
-                    //let markerImage = self.resizeImage(image: UIImage.init(named: "ParkSpaceLogo")!, newWidth: 30).withRenderingMode(.alwaysTemplate)
-                    //let markerView = UIImageView(image: markerImage)
-                    // Customize color of marker here:
-                    //markerView.tintColor = rented?.lightGray : UIColor(hexString: "19E698")
-                    //marker.iconView = markerView
-                    marker.position = CLLocationCoordinate2D(latitude: latitude as! CLLocationDegrees, longitude: longitude as! CLLocationDegrees)
-                    //marker.map = self.gMapView
-                    // *IMPORTANT* Assign all the spots data to the marker's userData property
-                    marker.userData = spot
-                })
+                index += 1
             }
-        }, withCancel: nil)
+        })
     }
+
 }
-
-
