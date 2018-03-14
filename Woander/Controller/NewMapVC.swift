@@ -11,7 +11,7 @@ import Firebase
 import GoogleMaps
 import GooglePlaces
 
-class NewMapVC: UIViewController, CLLocationManagerDelegate, UIImagePickerControllerDelegate {
+class NewMapVC: UIViewController, CLLocationManagerDelegate, UIImagePickerControllerDelegate, GMSMapViewDelegate {
     let locationManager = CLLocationManager()
     lazy var mapView = GMSMapView()
     let myPost = GMSMarker()
@@ -23,20 +23,24 @@ class NewMapVC: UIViewController, CLLocationManagerDelegate, UIImagePickerContro
     }
     
     func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
-        let location = CLLocationCoordinate2D(latitude: (CLLocationDegrees(marker.groundAnchor.x)), longitude: (CLLocationDegrees(marker.groundAnchor.y)))
+        /*let location = CLLocationCoordinate2D(latitude: (CLLocationDegrees(marker.groundAnchor.x)), longitude: (CLLocationDegrees(marker.groundAnchor.y)))
         
         infoWindow.removeFromSuperview()
         infoWindow = MapMarkerWindow(frame: CGRect(x: 0, y: 0, width: 350 , height: 550))
         infoWindow.center = mapView.projection.point(for: location)
         self.view.addSubview(infoWindow)
-        return false
+        return false*/
+        let spot = marker.userData as? Post ?? Post()
+        print("Marker tapped at \(marker.position.latitude) \(marker.position.longitude)")
+        print("content of marker \(spot.postContent)")
+        return true
+    }
+    
+    func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
+        print("you tapped at \(coordinate.latitude) \(coordinate.longitude)")
     }
 
     func mapView(_ mapView: GMSMapView, didChange position: GMSCameraPosition) {
-        }
-    
-        func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
-            infoWindow.removeFromSuperview()
         }
         
     override func viewDidLoad() {
@@ -45,6 +49,7 @@ class NewMapVC: UIViewController, CLLocationManagerDelegate, UIImagePickerContro
         //self.view.addSubview(postBtnCreate())
         let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 13.0)
         mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+        mapView.delegate = self
         view = mapView
         manageMarkersFromDB()
         
@@ -67,6 +72,7 @@ class NewMapVC: UIViewController, CLLocationManagerDelegate, UIImagePickerContro
                                     longitude: userLocation!.coordinate.longitude, zoom: 13.0)
         mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         mapView.isMyLocationEnabled = true
+        mapView.delegate = self
         self.view = mapView
         self.view.addSubview(addMyBtn())
         self.view.addSubview(postBtnCreate())
