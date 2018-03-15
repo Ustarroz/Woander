@@ -23,21 +23,14 @@ class NewMapVC: UIViewController, CLLocationManagerDelegate, UIImagePickerContro
     }
     
     func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
-        /*let location = CLLocationCoordinate2D(latitude: (CLLocationDegrees(marker.groundAnchor.x)), longitude: (CLLocationDegrees(marker.groundAnchor.y)))
-        
-        infoWindow.removeFromSuperview()
-        infoWindow = MapMarkerWindow(frame: CGRect(x: 0, y: 0, width: 350 , height: 550))
-        infoWindow.center = mapView.projection.point(for: location)
-        self.view.addSubview(infoWindow)
-        return false*/
-        let spot = marker.userData as? Post ?? Post()
-        print("Marker tapped at \(marker.position.latitude) \(marker.position.longitude)")
-        print("content of marker \(spot.postContent)")
+        guard let spot = marker.userData as? Post else { return false }
+        if spot.postType == Post.TYPE.AR {
+            //TODO add AR Call
+        }
         return true
     }
     
     func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
-        print("you tapped at \(coordinate.latitude) \(coordinate.longitude)")
     }
 
     func mapView(_ mapView: GMSMapView, didChange position: GMSCameraPosition) {

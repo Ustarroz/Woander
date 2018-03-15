@@ -131,6 +131,29 @@ class Dataservice {
         }
     }
     
+    func newPost(post : Post){
+        let newChild = REF_POST.childByAutoId()
+        post.setId(idPost: newChild.key)
+        var type : String
+        switch (post.postType) {
+        case Post.TYPE.PHOTO : type = "PHOTO"
+        case Post.TYPE.AR : type = "AR"
+        case Post.TYPE.VIDEO : type = "VIDEO"
+        default : type = "UNKNOWN"
+        }
+        let message = ["idPost": post.idPost,
+                       "idUser": post.idUser,
+                       "locLat": post.locLat,
+                       "locLon": post.locLon,
+                       "nbLike": post.nbLike,
+                       "postContent": post.postContent,
+                       "postDesc": post.postDesc,
+                       "postFilter": post.postFilter,
+                       "postType": type] as [String : Any]
+        let childUpdate = ["/posts/\(newChild.key)": message]
+        REF_BASE.updateChildValues(childUpdate)
+    }
+    
     func UploadPost(message: String , forUID uid: String, groupKey: String?, sendComplete: @escaping(_ status: Bool) ->()) {
         if groupKey != nil {
             
