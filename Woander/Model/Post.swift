@@ -72,6 +72,10 @@ class Post {
         self._idPost = idPost
     }
     
+    func setId(idPost : String) {
+        _idPost = idPost
+    }
+    
     enum TYPE : Int {
         case PHOTO = 0
         case VIDEO = 1
