@@ -43,6 +43,9 @@ class ARVC: UIViewController, ARSCNViewDelegate, UIPopoverPresentationController
         let node = SCNNode()
         sceneView.scene.rootNode.addChildNode(node)
         arVideoPlayer()
+        let forwardScene = SCNScene(named: "goodForward.scn")!
+        
+        sceneView.scene.rootNode.addChildNode(forwardScene.rootNode)
         
         // Set the scene to the view
         
