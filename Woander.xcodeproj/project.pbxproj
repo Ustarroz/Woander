@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4B42ACEAF25B26CF599B724C /* Pods_Woander.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14757C6CCF29F5A1E6FFA61A /* Pods_Woander.framework */; };
 		705D22AE205AD4FC006E6331 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 705D22AD205AD4FB006E6331 /* GoogleService-Info.plist */; };
-		705D22B0205AD549006E6331 /* starman.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 705D22AF205AD549006E6331 /* starman.mp4 */; };
 		705D22B2205AD935006E6331 /* Forward.scn in Resources */ = {isa = PBXBuildFile; fileRef = 705D22B1205AD935006E6331 /* Forward.scn */; };
 		705D22B4205AD9A0006E6331 /* goodForward.scn in Resources */ = {isa = PBXBuildFile; fileRef = 705D22B3205AD9A0006E6331 /* goodForward.scn */; };
 		A0F0379B641F77EAD5FDFB9B /* Pods_WoanderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B847137DDBDB954FEE8B43 /* Pods_WoanderTests.framework */; };
@@ -44,7 +43,6 @@
 		14757C6CCF29F5A1E6FFA61A /* Pods_Woander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Woander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C7BB5DE7FCD06725F7F9827 /* Pods-Woander.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Woander.release.xcconfig"; path = "Pods/Target Support Files/Pods-Woander/Pods-Woander.release.xcconfig"; sourceTree = "<group>"; };
 		705D22AD205AD4FB006E6331 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
-		705D22AF205AD549006E6331 /* starman.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = starman.mp4; sourceTree = "<group>"; };
 		705D22B1205AD935006E6331 /* Forward.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Forward.scn; sourceTree = "<group>"; };
 		705D22B3205AD9A0006E6331 /* goodForward.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = goodForward.scn; sourceTree = "<group>"; };
 		7E4721CD6D1BD779379BD001 /* Pods-Woander.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Woander.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Woander/Pods-Woander.debug.xcconfig"; sourceTree = "<group>"; };
@@ -201,7 +199,6 @@
 			isa = PBXGroup;
 			children = (
 				705D22B3205AD9A0006E6331 /* goodForward.scn */,
-				705D22AF205AD549006E6331 /* starman.mp4 */,
 				C43DB4562057CAAA000912A3 /* Forward.dae */,
 				705D22B1205AD935006E6331 /* Forward.scn */,
 			);
@@ -313,7 +310,6 @@
 				C4C35DCF1FBDC44500292BBE /* PostView.xib in Resources */,
 				705D22B4205AD9A0006E6331 /* goodForward.scn in Resources */,
 				705D22B2205AD935006E6331 /* Forward.scn in Resources */,
-				705D22B0205AD549006E6331 /* starman.mp4 in Resources */,
 				C4A3E6C31FB9EBAB00567836 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
