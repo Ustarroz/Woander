@@ -12,6 +12,8 @@
 		705D22B2205AD935006E6331 /* Forward.scn in Resources */ = {isa = PBXBuildFile; fileRef = 705D22B1205AD935006E6331 /* Forward.scn */; };
 		705D22B4205AD9A0006E6331 /* goodForward.scn in Resources */ = {isa = PBXBuildFile; fileRef = 705D22B3205AD9A0006E6331 /* goodForward.scn */; };
 		A0F0379B641F77EAD5FDFB9B /* Pods_WoanderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B847137DDBDB954FEE8B43 /* Pods_WoanderTests.framework */; };
+		C439D22D20600818005D9E7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C439D22C20600817005D9E7C /* GoogleService-Info.plist */; };
+		C439D22F206008E9005D9E7C /* starman.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C439D22E206008E9005D9E7C /* starman.mp4 */; };
 		C4A3E6991FB9BF2500567836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3E6981FB9BF2500567836 /* AppDelegate.swift */; };
 		C4A3E69B1FB9BF2500567836 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3E69A1FB9BF2500567836 /* MapVC.swift */; };
 		C4A3E6A01FB9BF2500567836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4A3E69F1FB9BF2500567836 /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 		705D22B1205AD935006E6331 /* Forward.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Forward.scn; sourceTree = "<group>"; };
 		705D22B3205AD9A0006E6331 /* goodForward.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = goodForward.scn; sourceTree = "<group>"; };
 		7E4721CD6D1BD779379BD001 /* Pods-Woander.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Woander.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Woander/Pods-Woander.debug.xcconfig"; sourceTree = "<group>"; };
+		C439D22C20600817005D9E7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C439D22E206008E9005D9E7C /* starman.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = starman.mp4; path = ../../../../Downloads/starman.mp4; sourceTree = "<group>"; };
 		C43DB4562057CAAA000912A3 /* Forward.dae */ = {isa = PBXFileReference; lastKnownFileType = text.xml.dae; path = Forward.dae; sourceTree = "<group>"; };
 		C4A3E6951FB9BF2500567836 /* Woander.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Woander.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A3E6981FB9BF2500567836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -132,10 +136,10 @@
 				C4A3E6BD1FB9CDDF00567836 /* Model */,
 				C4A3E6BC1FB9CDD700567836 /* Extensions */,
 				C4A3E6981FB9BF2500567836 /* AppDelegate.swift */,
-				705D22AD205AD4FB006E6331 /* GoogleService-Info.plist */,
 				C4A3E6C21FB9EBAB00567836 /* Main.storyboard */,
 				C4A3E69F1FB9BF2500567836 /* Assets.xcassets */,
 				C4A3E6A11FB9BF2500567836 /* LaunchScreen.storyboard */,
+				C439D22C20600817005D9E7C /* GoogleService-Info.plist */,
 				C4A3E6A41FB9BF2500567836 /* Info.plist */,
 			);
 			path = Woander;
@@ -304,9 +308,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C439D22F206008E9005D9E7C /* starman.mp4 in Resources */,
 				C4A3E6A31FB9BF2500567836 /* LaunchScreen.storyboard in Resources */,
+				C439D22D20600818005D9E7C /* GoogleService-Info.plist in Resources */,
 				C4A3E6A01FB9BF2500567836 /* Assets.xcassets in Resources */,
-				705D22AE205AD4FC006E6331 /* GoogleService-Info.plist in Resources */,
 				C4C35DCF1FBDC44500292BBE /* PostView.xib in Resources */,
 				705D22B4205AD9A0006E6331 /* goodForward.scn in Resources */,
 				705D22B2205AD935006E6331 /* Forward.scn in Resources */,
@@ -598,11 +603,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KD6LJJ2Y32;
+				DEVELOPMENT_TEAM = ZKTAG8422V;
 				INFOPLIST_FILE = Woander/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = peauc.woander;
+				PRODUCT_BUNDLE_IDENTIFIER = robin.woander;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -618,11 +623,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KD6LJJ2Y32;
+				DEVELOPMENT_TEAM = ZKTAG8422V;
 				INFOPLIST_FILE = Woander/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = peauc.woander;
+				PRODUCT_BUNDLE_IDENTIFIER = robin.woander;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
