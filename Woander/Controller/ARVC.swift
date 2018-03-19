@@ -111,7 +111,7 @@ class ARVC: UIViewController, ARSCNViewDelegate, UIPopoverPresentationController
         videoNode.geometry?.firstMaterial?.diffuse.contents = spriteKitScene
         videoNode.geometry?.firstMaterial?.isDoubleSided = true
         // place SCNNode inside ARKit 3D coordinate space
-        videoNode.position = SCNVector3(x: 0, y: 0, z: -2)
+        videoNode.position = SCNVector3(x: 0, y: 0, z: -3)
         
         // create a new scene
         let scene = SCNScene()
