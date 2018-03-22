@@ -15,7 +15,7 @@ class ARVC: UIViewController, ARSCNViewDelegate, UIPopoverPresentationController
     
     @IBOutlet var sceneView: ARSCNView!
    
-    let videoURL = URL(fileURLWithPath:Bundle.main.path(forResource: "starman", ofType: "mp4")!)
+    let videoURL = URL(fileURLWithPath:Bundle.main.path(forResource: "birds", ofType: "mp4")!)
     //let videoURL = URL(string: "http://downloads.4ksamples.com/downloads/[2160p]%204K-HD.Club-2013-Taipei%20101%20Fireworks%20Trailer%20(4ksamples.com).mp4")!
 
     struct AspectRatio {
@@ -44,7 +44,11 @@ class ARVC: UIViewController, ARSCNViewDelegate, UIPopoverPresentationController
         sceneView.scene.rootNode.addChildNode(node)
         arVideoPlayer()
         let forwardScene = SCNScene(named: "goodForward.scn")!
+        let Woander = forwardScene.rootNode.childNode(withName: "Woander", recursively: true)
         
+        let action = SCNAction.rotateBy(x: 0, y: CGFloat(2 * Double.pi), z: 0, duration: 10)
+        let repAction = SCNAction.repeatForever(action)
+        Woander?.runAction(repAction)
         sceneView.scene.rootNode.addChildNode(forwardScene.rootNode)
         
         // Set the scene to the view
